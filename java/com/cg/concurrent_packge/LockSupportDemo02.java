@@ -30,8 +30,7 @@ public class LockSupportDemo02 {
         t1.start();
         Thread.sleep(100);
         t2.start();
-        Thread.sleep(100);  // 查看结果执行顺序
-        t1.interrupt();
+
         LockSupport.unpark(t2);
     }
 }

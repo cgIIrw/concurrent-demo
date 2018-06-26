@@ -21,7 +21,7 @@ public class ThreadPoolDemo {
     public static void main(String[] args) {
         MyTask task = new MyTask();
         ExecutorService es = Executors.newFixedThreadPool(5);
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 100; i++) {
             es.submit(task);
         }
     }

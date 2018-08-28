@@ -4,6 +4,9 @@ import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.FutureTask;
 
+/**
+ * 使用JUC实现Future模式
+ */
 public class FutureDemo02 {
     public static void main(String[] args) {
         Host02 host02 = new Host02();

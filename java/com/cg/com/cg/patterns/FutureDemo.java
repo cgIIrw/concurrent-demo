@@ -1,5 +1,8 @@
 package com.cg.com.cg.patterns;
 
+/**
+ * 非java.util.Concurrent包实现
+ */
 public class FutureDemo {
     public static void main(String[] args) {
 

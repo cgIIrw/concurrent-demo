@@ -1,5 +1,7 @@
 package com.cg.concurrent_packge;
 
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 import java.util.concurrent.locks.LockSupport;
 
 /**
@@ -23,11 +25,11 @@ public class ThreadPoolDemo02 {
     }
 
     public static void main(String[] args) {
-//        ThreadPoolDemo.MyTask task = new ThreadPoolDemo.MyTask();
-//        ExecutorService es = Executors.newFixedThreadPool(5);
-//        for (int i = 0; i < 100; i++) {
-//            es.submit(task);
-//        }
+        ThreadPoolDemo.MyTask task = new ThreadPoolDemo.MyTask();
+        ExecutorService es = Executors.newFixedThreadPool(5);
+        for (int i = 0; i < 100; i++) {
+            es.submit(task);
+        }
 
         final int COUNT_BITS = Integer.SIZE - 3;
         System.out.println(Integer.toBinaryString(-1 << Integer.SIZE - 3));

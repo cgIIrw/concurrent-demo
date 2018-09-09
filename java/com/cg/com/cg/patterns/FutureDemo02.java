@@ -2,6 +2,7 @@ package com.cg.com.cg.patterns;
 
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
+import java.util.concurrent.Future;
 import java.util.concurrent.FutureTask;
 
 /**
@@ -12,6 +13,7 @@ public class FutureDemo02 {
         Host02 host02 = new Host02();
         IData iData= host02.request();
         System.out.println(iData.getContent());
+
     }
 }
 
